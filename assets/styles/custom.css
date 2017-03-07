@@ -1,0 +1,351 @@
+/********************
+    FONT
+********************/
+
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700');
+
+
+/********************
+    GENERAL STYLES
+********************/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  color: #222;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+hr {
+  margin-bottom: 4rem;
+  margin-top: 0;
+  width: 120px;
+  border-top-width: 6px;
+  border-top-color: #CE6C47;
+}
+
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+
+/********************
+    REUSABLE CLASSES
+********************/
+/*COLORS*/
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-dark {
+  background-color: #444545;
+}
+
+.txt-white {
+  color: white;
+}
+
+.section-title {
+  margin-bottom: 4rem;
+  font-size: 3rem;
+}
+
+.color-ease {
+  transition: color ease 0.3s
+}
+
+.all-ease {
+  transition: all ease 0.3s;
+}
+
+/********************
+    NAV
+********************/
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-scrolled {
+  background-color: #444545;
+  //border-bottom: 1px solid lightgray;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 2.2rem;
+  top: 12px;
+}
+
+.navbar-nav .nav-item.nav-link {
+  display: block;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover,
+.navbar-brand:active,
+.navbar-nav .nav-item.nav-link:focus,
+.navbar-nav .nav-item.nav-link:hover,
+.navbar-nav .nav-item.nav-link:active {
+  color: #CE6C47;
+}
+
+
+/********************
+    HEADER
+********************/
+
+.page-header {
+  background-image: url("./../img/yellowstone-national-park-1589616_1920-dark.jpg");
+  background-size: cover;
+  background-position: top;
+  padding-top: 60px;
+}
+
+/**** TOPBAR ****/
+/*
+.top-bar {
+  border-bottom: 1px solid lightgray;
+}
+
+.topbar-intro,
+.topbar-socmed {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.topbar-intro p {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.topbar-socmed ul li a {
+  display: block;
+}*/
+
+
+/**** HERO ****/
+
+.hero {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.hero-content h1 {
+  line-height: 1.3;
+}
+
+.hero-content p {
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+
+/********************
+    SERVICES
+********************/
+
+.service-box {
+  margin-bottom: 3rem;
+}
+
+.service-box:last-child {
+  margin-bottom: 0;
+}
+
+.service-box img {
+  border-radius: 3px;
+}
+
+.service-box h3 {
+  font-size: 2rem;
+}
+
+.service-box p {
+  font-size: 1.4rem;
+}
+
+.service-box a {
+  font-size: 1.4rem;
+}
+
+.service-box a:link,
+.service-box a:visited {
+  color: #222;
+}
+
+.service-box a:focus,
+.service-box a:hover,
+.service-box a:active {
+  color: #C2C5BB;
+}
+
+
+/********************
+    WATERS
+********************/
+
+.waters-content .nav .nav-link {
+  font-size: 1.6rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.waters-content .nav .nav-link:link,
+.waters-content .nav .nav-link:visited {
+  color: #fff;
+}
+
+.waters-content .nav .nav-link:focus,
+.waters-content .nav .nav-link:hover,
+.waters-content .nav .nav-link:active,
+.waters-content .nav .nav-link.active {
+  color: #CE6C47;
+}
+
+.hvr-box {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  transition: opacity ease 0.5s;
+}
+
+.hvr-box:hover {
+  opacity: 1;
+}
+
+.hvr-box-txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.2rem;
+  font-weight: bold;
+  width: auto;
+  display: inline-block;
+}
+
+.hvr-box-txt::before,
+.hvr-box-txt::after {
+  content: "";
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 30px;
+  background-color: #CE6C47;
+}
+
+.hvr-box-txt::before {
+  left: -40px;
+}
+
+.hvr-box-txt::after {
+  right: -40px
+}
+
+/********************
+    FLOWS
+********************/
+
+.water-flow-table {
+  background-color: red;
+  color: green;
+}
+
+
+/********************
+    MEDIA QUERIES
+********************/
+
+@media(min-width: 768px) {
+
+  /********************
+      HEADER
+  ********************/
+
+  /**** NAV ****/
+  
+  .navbar .navbar-nav .nav-item.nav-link {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 2rem 0.5rem;
+  }
+
+  .navbar.navbar-scrolled .navbar-nav .nav-item.nav-link {
+    padding: 1rem 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .navbar.navbar-scrolled .navbar-brand {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .navbar.navbar-scrolled .navbar-brand img {
+    height: 38px;
+    width: 38px;
+  }
+
+
+
+  /********************
+      WATERS
+  ********************/
+
+
+}
