@@ -289,9 +289,12 @@ a:active {
     FLOWS
 ********************/
 
-.water-flow-table {
-  
+.flows .water-flow:nth-child(-n + 2) {
+  margin-bottom: 5rem;
 }
+
+
+
 
 
 /********************
@@ -332,6 +335,14 @@ a:active {
   /********************
       WATERS
   ********************/
+
+  /********************
+      FLOWS
+  ********************/
+
+.flows .water-flow:nth-child(-n + 2) {
+  margin-bottom: 0;
+}
 
 
 }
