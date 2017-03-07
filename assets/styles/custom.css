@@ -152,28 +152,6 @@ a:active {
   padding-top: 60px;
 }
 
-/**** TOPBAR ****/
-/*
-.top-bar {
-  border-bottom: 1px solid lightgray;
-}
-
-.topbar-intro,
-.topbar-socmed {
-  font-size: 1.4rem;
-  color: white;
-}
-
-.topbar-intro p {
-  padding: 1rem 0;
-  text-align: center;
-}
-
-.topbar-socmed ul li a {
-  display: block;
-}*/
-
-
 /**** HERO ****/
 
 .hero {
@@ -235,6 +213,15 @@ a:active {
     WATERS
 ********************/
 
+.nav-row {
+  margin-left:0;
+  margin-right: 0;
+}
+
+.waters-content .nav {
+  width: 100%;
+}
+
 .waters-content .nav .nav-link {
   font-size: 1.6rem;
   padding-top: 1.5rem;
@@ -254,14 +241,14 @@ a:active {
 }
 
 .hvr-box {
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.6);
-  transition: opacity ease 0.5s;
+  transition: opacity ease 0.4s;
 }
 
 .hvr-box:hover {
@@ -303,8 +290,7 @@ a:active {
 ********************/
 
 .water-flow-table {
-  background-color: red;
-  color: green;
+  
 }
 
 
