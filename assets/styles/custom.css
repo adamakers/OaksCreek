@@ -34,6 +34,10 @@ section {
   padding: 5rem 0;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
 p {
   margin: 0;
 }
@@ -41,6 +45,10 @@ p {
 ul {
   list-style: none;
   margin: 0;
+}
+
+li {
+
 }
 
 a {
@@ -66,6 +74,8 @@ a:active {
 /********************
     REUSABLE CLASSES
 ********************/
+/*FONT SIZE*/
+
 /*COLORS*/
 .bg-transparent {
   background-color: transparent;
@@ -181,10 +191,6 @@ a:active {
   border-radius: 3px;
 }
 
-.service-box h3 {
-  font-size: 2rem;
-}
-
 .service-box p {
   font-size: 1.4rem;
 }
@@ -285,19 +291,52 @@ a:active {
     ABOUT
 ********************/
 
-.about-content {}
+.about-content {
+  max-width: 1920px;
+}
 
 .about-background {
-  background-color: green;
+  background-color: lightgrey;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
 }
+
+.about-shop {
+  background-image: url("./../img/beach-56464_1920.jpg");
+}
+
+.about-area {
+  background-image: url("./../img/kissing-camels-1273576_1920.jpg");
+}
+
+.about-top {
+  padding: 5rem;
+}
+
+.about-top h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.about-top p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+
 
 /********************
     CONTACT
 ********************/
 
 #map {
-  height: 100%;
+  height: 300px;
   width: 100%;
+}
+
+.contact-form {
+  padding:
 }
 
 
@@ -335,19 +374,30 @@ a:active {
     width: 38px;
   }
 
-
-
-  /********************
-      WATERS
-  ********************/
-
   /********************
       FLOWS
   ********************/
 
-.flows .water-flow:nth-child(-n + 2) {
-  margin-bottom: 0;
+  .flows .water-flow:nth-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
 }
 
+@media(min-width:992px) {
+  
+  /********************
+      ABOUT
+  ********************/
+  .about-background {
+    height: auto;
+  }
 
+  .about-top {
+    padding: 7% 5%;
+  }
+
+  .about-top p:first-child {
+    margin-bottom: 1.5rem;
+  }
 }
