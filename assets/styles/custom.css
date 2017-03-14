@@ -28,6 +28,7 @@ html {
 body {
   font-family: 'Muli', sans-serif;
   color: #222;
+  position: relative;
 }
 
 section {
@@ -92,7 +93,6 @@ a:active {
 
 .white-nav-link {
   color: white;
-
 }
 
 .white-nav-link:link,
@@ -100,7 +100,7 @@ a:active {
   color: white;
 }
 
-.white-nav-link.active,
+.navbar-nav .nav-item .active,
 .white-nav-link:focus,
 .white-nav-link:active,
 .white-nav-link:hover {
@@ -148,12 +148,13 @@ nav .navbar-collapse.collapse {
   background-color: #444545;
 }
 
-.navbar-nav .nav-item.nav-link {
+.navbar-nav .nav-item .nav-link {
   display: block;
   font-size: 1.4rem;
   padding: 1rem;
   margin-left: 1rem;
 }
+
 
 
 /********************
@@ -391,6 +392,24 @@ nav .navbar-collapse.collapse {
 
 .contact-form .form-group .form-control::placeholder {
   color: #95a5a6;
+}
+
+.contact-form .btn.contact-submit-btn {
+  background-color: white;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  border: 2px solid #222;
+  border-radius: 500px;
+  cursor: pointer;
+  font-family: 'Muli', sans-serif;
+}
+
+.contact-form .btn.contact-submit-btn:focus,
+.contact-form .btn.contact-submit-btn:hover,
+.contact-form .btn.contact-submit-btn:active {
+  background-color: #CE6C47;
+  border-color: #CE6C47;
+  color: white;
 }
 
 
