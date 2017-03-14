@@ -429,12 +429,14 @@ nav .navbar-collapse.collapse {
 }
 
 .footer-col {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .footer-top .footer-top-logo-container img {
   background-color: white;
   border-radius: 50%;
+  height: 75px;
+  width: 75px;
 }
 
 .footer-bottom {
@@ -445,6 +447,11 @@ nav .navbar-collapse.collapse {
 .footer-bottom-socialmed,
 .footer-bottom-copyright {
   text-align: center;
+}
+
+.footer .nav .nav-item .nav-link,
+.footer .shop-address {
+  font-size: 1.2rem;
 }
 
 .footer-bottom-socialmed li {
