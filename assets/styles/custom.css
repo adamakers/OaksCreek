@@ -47,10 +47,6 @@ ul {
   margin: 0;
 }
 
-li {
-
-}
-
 a {
   text-decoration: none;
 }
@@ -94,7 +90,25 @@ a:active {
   font-size: 3rem;
 }
 
+.white-nav-link {
+  color: white;
+
+}
+
+.white-nav-link:link,
+.white-nav-link:visited {
+  color: white;
+}
+
+.white-nav-link.active,
+.white-nav-link:focus,
+.white-nav-link:active,
+.white-nav-link:hover {
+  color: #CE6C47;
+}
+
 .all-ease {
+  -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
 
@@ -130,20 +144,15 @@ a:active {
   top: 12px;
 }
 
+nav .navbar-collapse.collapse {
+  background-color: #444545;
+}
+
 .navbar-nav .nav-item.nav-link {
   display: block;
   font-size: 1.4rem;
-  padding: 1rem 0;
-  color: white;
-}
-
-.navbar-brand:focus,
-.navbar-brand:hover,
-.navbar-brand:active,
-.navbar-nav .nav-item.nav-link:focus,
-.navbar-nav .nav-item.nav-link:hover,
-.navbar-nav .nav-item.nav-link:active {
-  color: #CE6C47;
+  padding: 1rem;
+  margin-left: 1rem;
 }
 
 
@@ -230,19 +239,22 @@ a:active {
   padding-bottom: 1.5rem;
 }
 
-.waters-content .nav .nav-link:link,
-.waters-content .nav .nav-link:visited {
-  color: #fff;
+.waters-content .tab-content .water-tile {
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.waters-content .nav .nav-link:focus,
-.waters-content .nav .nav-link:hover,
-.waters-content .nav .nav-link:active,
-.waters-content .nav .nav-link.active {
-  color: #CE6C47;
+.water-tile:last-child {
+  margin-bottom: none;
+}
+
+.waters-content .tab-content .water-tile img {
+  border-radius: 5px;
 }
 
 .hvr-box {
+  border-radius: 5px;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -250,6 +262,7 @@ a:active {
   right: 15px;
   bottom: 0;
   background-color: rgba(0,0,0,0.6);
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -261,7 +274,8 @@ a:active {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 2.2rem;
   font-weight: bold;
   width: auto;
@@ -273,7 +287,8 @@ a:active {
   content: "";
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   height: 4px;
   width: 30px;
   background-color: #CE6C47;
@@ -284,15 +299,22 @@ a:active {
 }
 
 .hvr-box-txt::after {
-  right: -40px
+  right: -40px;
 }
 
 /********************
     ABOUT
 ********************/
 
-.about-content {
+.tile-padding {
+  padding: 5rem;
+}
+
+.about-content,
+.contact-content {
   max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-background {
@@ -310,11 +332,8 @@ a:active {
   background-image: url("./../img/kissing-camels-1273576_1920.jpg");
 }
 
-.about-top {
-  padding: 5rem;
-}
-
-.about-top h3 {
+.about-top h3,
+.contact-form h3 {
   font-size: 2.4rem;
   margin-bottom: 2rem;
 }
@@ -336,8 +355,89 @@ a:active {
 }
 
 .contact-form {
-  padding:
+  padding: 3rem 1rem;
 }
+
+.contact-form .form-group label {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.contact-content .contact-form .form-group input,
+.contact-content .contact-form .form-group textarea {
+  font-size: 1.6rem;
+  border-radius: 0;
+  border: 2px solid #95a5a6;
+  padding: 1rem;
+}
+
+.contact-content .contact-form .form-group input:focus,
+.contact-content .contact-form .form-group textarea:focus {
+  border-color: #222;
+  color:#222;
+}
+
+.contact-form .form-group .form-control::-webkit-input-placeholder {
+  color: #95a5a6;
+}
+
+.contact-form .form-group .form-control::-moz-placeholder {
+  color: #95a5a6;
+}
+
+.contact-form .form-group .form-control:-ms-input-placeholder {
+  color: #95a5a6;
+}
+
+.contact-form .form-group .form-control::placeholder {
+  color: #95a5a6;
+}
+
+
+/********************
+    FOOTER
+********************/
+
+.footer h4,
+.footer address {
+  padding: 0.5rem 1rem;
+}
+
+.footer-top {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #2E2F2F;
+}
+
+.footer-col {
+  margin-bottom: 1.5rem;
+}
+
+.footer-top .footer-top-logo-container img {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-bottom-socialmed,
+.footer-bottom-copyright {
+  text-align: center;
+}
+
+.footer-bottom-socialmed li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.footer-bottom-socialmed li .fa {
+  font-size: 2.4rem;
+}
+
+
 
 
 
@@ -352,6 +452,10 @@ a:active {
   ********************/
 
   /**** NAV ****/
+
+  nav .navbar-collapse.collapse {
+    background-color: transparent;
+  }
   
   .navbar .navbar-nav .nav-item.nav-link {
     display: inline-block;
@@ -382,6 +486,23 @@ a:active {
     margin-bottom: 0;
   }
 
+  /********************
+      FOOTER
+  ********************/
+
+  .footer-bottom-copyright {
+    text-align: left;
+  }
+
+   .footer-bottom-socialmed {
+     text-align: right;
+   }
+
+   .footer-bottom-copyright p {
+     line-height: 25px;
+   }
+  
+
 }
 
 @media(min-width:992px) {
@@ -393,11 +514,41 @@ a:active {
     height: auto;
   }
 
-  .about-top {
+  .tile-padding {
     padding: 7% 5%;
   }
 
   .about-top p:first-child {
     margin-bottom: 1.5rem;
   }
+
+  /********************
+      WATERS
+  ********************/
+
+  .water-tile {
+    margin-bottom: 2rem;
+  }
+
+  .water-tile:last-child {
+    margin-bottom: none;
+  }
+
+  /********************
+      CONTACT
+  ********************/
+
+  #map {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contact-content .contact-form .form-group input,
+  .contact-content .contact-form .form-group textarea {
+    font-size: 1.6rem;
+    border-radius: 0;
+    border: 2px solid #95a5a6;
+    padding: 1rem;
+  }
+
 }
