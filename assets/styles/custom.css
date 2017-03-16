@@ -15,6 +15,15 @@
   box-sizing: border-box;
 }
 
+::-moz-selection {
+  background-color: #CE6C47;
+  color: white;
+}
+::selection {
+  background-color: #CE6C47;
+  color: white;
+}
+
 html, 
 body {
   height: 100%;
@@ -32,7 +41,8 @@ body {
 }
 
 section {
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 h3 {
@@ -86,6 +96,8 @@ a:active {
   color: white;
 }
 
+
+/*PAGE ITEMS*/
 .section-title {
   margin-bottom: 4rem;
   font-size: 3rem;
@@ -105,6 +117,24 @@ a:active {
 .white-nav-link:active,
 .white-nav-link:hover {
   color: #CE6C47;
+}
+
+.btn {
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  border: 2px solid #222;
+  border-radius: 500px;
+  cursor: pointer;
+  font-family: 'Muli', sans-serif;
+  background-color: transparent;
+}
+
+.btn:focus,
+.btn:hover,
+.btn:active {
+  background-color: #CE6C47;
+  border-color: #CE6C47;
+  color: white;
 }
 
 .all-ease {
@@ -154,8 +184,6 @@ nav .navbar-collapse.collapse {
   padding: 1rem;
   margin-left: 1rem;
 }
-
-
 
 /********************
     HEADER
@@ -304,6 +332,38 @@ nav .navbar-collapse.collapse {
 }
 
 /********************
+    FLOWS
+********************/
+
+.main-flows {
+  background-color: #E3E3E3;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.main-flows h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.main-flows p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.flows-btn {
+  background-color: transparent;
+  padding: 1.5rem 4rem;
+}
+
+.flows-btn:focus,
+.flows-btn:hover,
+.flows-btn:active {
+
+}
+
+
+/********************
     ABOUT
 ********************/
 
@@ -343,8 +403,6 @@ nav .navbar-collapse.collapse {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
-
-
 
 /********************
     CONTACT
@@ -393,25 +451,6 @@ nav .navbar-collapse.collapse {
 .contact-form .form-group .form-control::placeholder {
   color: #95a5a6;
 }
-
-.contact-form .btn.contact-submit-btn {
-  background-color: white;
-  padding: 1rem 3rem;
-  font-size: 1.4rem;
-  border: 2px solid #222;
-  border-radius: 500px;
-  cursor: pointer;
-  font-family: 'Muli', sans-serif;
-}
-
-.contact-form .btn.contact-submit-btn:focus,
-.contact-form .btn.contact-submit-btn:hover,
-.contact-form .btn.contact-submit-btn:active {
-  background-color: #CE6C47;
-  border-color: #CE6C47;
-  color: white;
-}
-
 
 /********************
     FOOTER
