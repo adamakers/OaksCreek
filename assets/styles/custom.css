@@ -367,16 +367,6 @@ nav .navbar-collapse.collapse {
     ABOUT
 ********************/
 
-.tile-padding {
-  padding: 5rem;
-}
-
-.about-content,
-.contact-content {
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .about-background {
   background-color: lightgrey;
@@ -385,21 +375,29 @@ nav .navbar-collapse.collapse {
   background-position: center;
 }
 
-.about-shop {
+.bg-shop {
   background-image: url("./../img/beach-56464_1920.jpg");
 }
 
-.about-area {
+.bg-area {
   background-image: url("./../img/kissing-camels-1273576_1920.jpg");
 }
 
+.about-top,
+.about-bottom {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .about-top h3,
+.about-bottom h3,
 .contact-form h3 {
   font-size: 2.4rem;
   margin-bottom: 2rem;
 }
 
-.about-top p {
+.about-top p,
+.about-bottom p {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
@@ -503,9 +501,6 @@ nav .navbar-collapse.collapse {
 }
 
 
-
-
-
 /********************
     MEDIA QUERIES
 ********************/
@@ -544,14 +539,6 @@ nav .navbar-collapse.collapse {
   }
 
   /********************
-      FLOWS
-  ********************/
-
-  .flows .water-flow:nth-child(-n + 2) {
-    margin-bottom: 0;
-  }
-
-  /********************
       FOOTER
   ********************/
 
@@ -571,21 +558,6 @@ nav .navbar-collapse.collapse {
 }
 
 @media(min-width:992px) {
-  
-  /********************
-      ABOUT
-  ********************/
-  .about-background {
-    height: auto;
-  }
-
-  .tile-padding {
-    padding: 7% 5%;
-  }
-
-  .about-top p:first-child {
-    margin-bottom: 1.5rem;
-  }
 
   /********************
       WATERS
@@ -600,10 +572,81 @@ nav .navbar-collapse.collapse {
   }
 
   /********************
+      ABOUT
+  ********************/
+
+  .about-content .top,
+  .about-content .bottom {
+    position: relative;
+  }
+
+  #main-about .container-fluid,
+  .about-background  {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
+  #main-about .container-fluid {
+    left: 0;
+    right: 0;
+  }
+
+  .about-background {
+    height: 100%;
+  }
+  
+  .bg-shop {
+    left: 0;
+  }
+
+  .bg-area {
+    right: 0;
+  }
+
+  .about-top,
+  .about-bottom,
+  .contact-form {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .about-top,
+  .contact-form {
+    padding-left: 5rem;
+  }
+
+  .about-bottom {
+    padding-right: 5rem;
+  }
+
+
+
+
+
+  /********************
       CONTACT
   ********************/
 
+  .contact-content {
+    position: relative;
+  }
+
+  .contact-content .container-fluid,
+  .contact-content .container-fluid .row {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
   #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
     width: 100%;
   }
