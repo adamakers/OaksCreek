@@ -6,6 +6,7 @@
 /******************************
     GOOGLE MAPS
 ******************************/
+
 function initMap() {
   const uluru = {lat: 38.896139, lng: -104.850};
   let map = new google.maps.Map(document.getElementById('map'), {
@@ -34,11 +35,8 @@ function navbarScrolled(){
 }
 
 
-
 /******************************
     EVENT LISTENERS
 ******************************/
 window.onload = navbarScrolled;
 window.addEventListener('scroll', navbarScrolled);
-
-
