@@ -431,6 +431,8 @@ nav .navbar-collapse.collapse {
 
 .contact-form {
   padding: 3rem 1rem;
+  position: relative;
+  z-index: 9999;
 }
 
 .contact-form .form-group label {
@@ -655,7 +657,7 @@ nav .navbar-collapse.collapse {
     left: 0;
     right: 0;
     height: 100%;
-    z-index: 999;
+    z-index: 1;
   }
 
   .contact-content .contact-form .form-group input,
