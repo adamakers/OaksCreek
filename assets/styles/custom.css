@@ -103,7 +103,8 @@ a:active {
   font-size: 3rem;
 }
 
-.white-nav-link {
+.white-nav-link,
+.tab-nav-item {
   color: white;
 }
 
@@ -268,6 +269,19 @@ nav .navbar-collapse.collapse {
   padding-bottom: 1.5rem;
 }
 
+.nav-pills .nav-link:focus,
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link:active {
+  background-color: rgba(206,108,71,0.6);
+} 
+
+.nav-pills .nav-link.active, 
+.nav-pills .nav-item.show .nav-link {
+  background-color: #CE6C47;
+}
+
+
+
 .waters-content .tab-content .water-tile {
   margin-bottom: 2rem;
   border-radius: 5px;
@@ -409,10 +423,11 @@ nav .navbar-collapse.collapse {
   width: 100%;
 }
 
-/*#map {
-  background-image: url("http://placehold.it/1920x1050");
+#map {
+  background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=38.896139,-104.850450&zoom=13&scale=2&size=1200x1000&maptype=roadmap&markers&markers=color:blue%7Clabel:%7C38.896139,-104.850450&key=AIzaSyAc29wvJhZuAmSfHxGd4Z1UXgdM0aJdJnw");
   background-size: cover;
-}*/
+  background-position: center;
+}
 
 .contact-form {
   padding: 3rem 1rem;
