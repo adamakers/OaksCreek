@@ -424,7 +424,7 @@ nav .navbar-collapse.collapse {
 }
 
 #map {
-  background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=38.896139,-104.850450&zoom=13&scale=2&size=1200x1000&maptype=roadmap&markers&markers=color:blue%7Clabel:%7C38.896139,-104.850450&key=AIzaSyAc29wvJhZuAmSfHxGd4Z1UXgdM0aJdJnw");
+  background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=38.896139,-104.850450&zoom=13&scale=2&size=1200x1000&maptype=roadmap&markers&markers=color:blue%7Clabel:%7C38.896139,-104.850450&key=AIzaSyAImafshPueQH_l1JPeqSqvilGBklwa1UA");
   background-size: cover;
   background-position: center;
 }
